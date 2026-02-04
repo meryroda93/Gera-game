@@ -10,6 +10,11 @@ const messages = {
   correct3: "¡SÍ! ERES MI SAN VALENTÍN 💖"
 };
 
+function goToSystem() {
+  document.querySelector('.screen.active').classList.remove('active');
+  document.getElementById('system').classList.add('active');
+}
+
 function startGame() {
   document.getElementById('bgMusic').volume = 0.5;
   document.getElementById('bgMusic').play();
