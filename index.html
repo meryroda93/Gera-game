@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Valentine Game Night 2.0 💘</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <audio id="bgMusic" src="musica.mp3" loop></audio>
+  <audio id="plop" src="plop.mp3"></audio>
+  <audio id="errorSound" src="error.mp3"></audio>
+  <audio id="startSound" src="start.mp3"></audio>
+  <audio id="winSound" src="win.mp3"></audio>
+
+  <div id="particles-container"></div>
+
+  <div class="main-viewport">
+    <div class="game-container">
+      
+      <div class="screen active" id="start">
+        <h1 class="sticker-title">VALENTiN<br>GAME</h1>
+        <div class="sub-banner">MADE JUST FOR YOU!</div>
+        <p class="blink">PRESIONA START</p>
+        <button class="btn-main" onclick="startGame()">START</button>
+      </div>
+
+      <div class="screen" id="q1">
+        <span class="level-badge">NIVEL 1</span>
+        <h2>¿QUIÉN ES MÁS BERRINCHUDO?</h2>
+        <button class="btn-option" onclick="processAnswer(false, 'incorrect1')">A) Kelly 😄</button>
+        <button class="btn-option" onclick="processAnswer(true, 'correct1')">B) Laisha 😝</button>
+      </div>
+
+      <div class="screen" id="q2">
+        <span class="level-badge">NIVEL 2</span>
+        <h2>¿DÓNDE FUE NUESTRO PRIMER BESO?</h2>
+        <button class="btn-option" onclick="processAnswer(false, 'incorrect2a')">A) En tu casa 🏠</button>
+        <button class="btn-option" onclick="processAnswer(false, 'incorrect2b')">B) En el carro 🚗</button>
+        <button class="btn-option" onclick="processAnswer(true, 'correct2')">C) En una fiesta 🎉</button>
+      </div>
+
+      <div class="screen" id="q3">
+        <span class="level-badge">NIVEL 3</span>
+        <h2>¿QUIERES SER MI SAN VALENTÍN?</h2>
+        <button class="btn-option" onclick="processAnswer(true, 'correct3')">A) Sí, claro que sí 💖</button>
+        <button class="btn-option" onclick="processAnswer(false, 'incorrect3')">B) No, qué asco</button>
+      </div>
+
+      <div class="screen" id="message-screen">
+        <div id="gatito-pixel" class="pixel-cat">🐱</div>
+        <h2 id="feedback-text"></h2>
+        <button id="btn-proceed" class="btn-main"></button>
+      </div>
+
+      <div class="screen" id="final">
+        <h1 class="sticker-title" style="font-size: 18px;">¡LEVEL CLEAR! 🏆</h1>
+        <p class="final-msg">Defensa: 0 | Amor: INFINITO ⭐️</p>
+        <p class="final-msg">Nos vemos el 14 de febrero, mi guapo 👩🏻&zwj;❤️&zwj;💋&zwj;👨🏻</p>
+        <p class="final-msg">La vida sin ti = GAME OVER 👾</p>
+      </div>
+
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
