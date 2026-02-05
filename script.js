@@ -31,7 +31,7 @@ function showScreen(id) {
 
 function spawnParticles(type) {
   const container = document.getElementById('particles-container');
-  const icons = type === 'love' ? ['💖', '🐱', '✨', '😻', '🍭'] : ['😡', '💢', '🙄', '😤'];
+  const icons = type === 'love' ? ['💖', '👑', '✨', '🥰', '💋', '💝'] : ['😡', '💢', '💩', '👾', '🫤'];
   for(let i=0; i<30; i++) {
     const p = document.createElement('div');
     p.className = 'particle';
