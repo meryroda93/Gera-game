@@ -58,7 +58,7 @@ function processAnswer(isCorrect, msgKey) {
     btnProceed.innerText = "CONTINUAR";
     btnProceed.onclick = () => {
       currentLevel++;
-      if (currentLevel > 3) {
+      if (currentLevel > 4) {
         document.getElementById('winSound').play();
         showScreen('final');
         spawnParticles('love'); // Lluvia extra final
