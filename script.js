@@ -6,8 +6,10 @@ const messages = {
   incorrect2a: "¿Es en serio que no te acuerdas? pero bueno, te perdono 😡",
   incorrect2b: "Vuelve a leer la pregunta 😡",
   correct2: "Tú me das +1000 de vida 🎮",
-  incorrect3: "Si no pones la A, me enojaré por siempre contigo 🐱💢",
-  correct3: "¡SÍ! ERES MI SAN VALENTÍN 💖"
+  incorrect3: "No es solo una cosa 🐱",
+  correct3: "¡SÍ! Este jugador sabe reconocer lo bueno 💖",
+  incorrect4: "Si no pones la A, me enojaré por siempre contigo 🐱💢",
+  correct4: "¡SÍ! ERES MI SAN VALENTÍN 💖"
 };
 
 function goToSystem() {
