@@ -50,7 +50,7 @@ function processAnswer(isCorrect, msgKey) {
   const catDiv = document.getElementById('gatito-pixel');
   
   feedbackText.innerText = messages[msgKey];
-  catDiv.innerHTML = isCorrect ? '😻' : '🐱💢';
+  catDiv.innerHTML = isCorrect ? '🤭' : '😖💢';
 
   if (isCorrect) {
     document.getElementById('plop').play();
