@@ -8,8 +8,8 @@ const messages = {
   correct2: "Tú me das +1000 de vida 🎮",
   incorrect3: "No es solo una cosa 🐱",
   correct3: "¡SÍ! Este jugador sabe reconocer lo bueno 💖",
-  incorrect4: "Si no pones la A, me enojaré por siempre contigo 🐱💢",
-  correct4: "¡SÍ! ERES MI SAN VALENTÍN 💖"
+  incorrect6: "Si no pones la A, me enojaré por siempre contigo 🐱💢",
+  correct6: "¡SÍ! ERES MI SAN VALENTÍN 💖"
 };
 
 function goToSystem() {
@@ -58,7 +58,7 @@ function processAnswer(isCorrect, msgKey) {
     btnProceed.innerText = "CONTINUAR";
     btnProceed.onclick = () => {
       currentLevel++;
-      if (currentLevel > 4) {
+      if (currentLevel > 6) {
         document.getElementById('winSound').play();
         showScreen('final');
         spawnParticles('love'); // Lluvia extra final
