@@ -31,6 +31,10 @@ function showScreen(id) {
   document.getElementById(id).classList.add('active');
 }
 
+function goToFinalQuestion() {
+  showScreen('q7');
+}
+
 function spawnParticles(type) {
   const container = document.getElementById('particles-container');
   const icons = type === 'love' ? ['💖', '👑', '✨', '🥰', '💋', '💝'] : ['😡', '💢', '💩', '👾', '🫤'];
@@ -60,7 +64,10 @@ function processAnswer(isCorrect, msgKey) {
     btnProceed.innerText = "CONTINUAR";
     btnProceed.onclick = () => {
       currentLevel++;
-      if (currentLevel > 7) {
+      if (currentLevel === 7) {
+        showScreen('final-warning');
+        }
+      else if (currentLevel > 7) {
         document.getElementById('winSound').play();
         showScreen('final');
         spawnParticles('love'); // Lluvia extra final
