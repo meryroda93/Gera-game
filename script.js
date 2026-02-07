@@ -1,15 +1,17 @@
 let currentLevel = 1;
 
 const messages = {
-  incorrect1: "Creo que eso no es muy acertado NIÑO 😡",
+  incorrect1: "Creo que eso no es muy acertado Dudu 😡",
+  incorrect2: "¿Es en serio que no te acuerdas? pero bueno, te perdono 😡",
+  incorrect3: "Vuelve a leer la pregunta 😡",
+  incorrect4: "No es solo una cosa 🐱",
+  incorrect5: "Si no pones la A, me enojaré por siempre contigo 🐱💢",
   correct1: "Este amor no necesita tutorial ♥️",
-  incorrect2a: "¿Es en serio que no te acuerdas? pero bueno, te perdono 😡",
-  incorrect2b: "Vuelve a leer la pregunta 😡",
   correct2: "Tú me das +1000 de vida 🎮",
-  incorrect3: "No es solo una cosa 🐱",
   correct3: "¡SÍ! Este jugador sabe reconocer lo bueno 💖",
-  incorrect6: "Si no pones la A, me enojaré por siempre contigo 🐱💢",
-  correct6: "¡SÍ! ERES MI SAN VALENTÍN 💖"
+  correct4: "Respuesta correcta... y directa al corazón 💖",
+  correct6: "A veces el soporte técnico también barre… y casi siempre sale un conejo de Canelita 🐶🧹💕",
+  correct7: "¡SÍ! ERES MI SAN VALENTÍN 💖"
 };
 
 function goToSystem() {
@@ -58,7 +60,7 @@ function processAnswer(isCorrect, msgKey) {
     btnProceed.innerText = "CONTINUAR";
     btnProceed.onclick = () => {
       currentLevel++;
-      if (currentLevel > 6) {
+      if (currentLevel > 7) {
         document.getElementById('winSound').play();
         showScreen('final');
         spawnParticles('love'); // Lluvia extra final
